@@ -1,0 +1,87 @@
+body{
+    background-color: gray;
+}
+header{
+    border:2px solid black;
+    background-color: red;
+    position: fixed;
+    top:110px;
+    width:100%;
+    border:1px solid black;
+    display: grid;
+    grid-area: h;
+    
+
+}
+footer{
+    border:2px solid black;
+    background-color: red;
+    position: fixed;
+    width:100%;
+    bottom:1px;
+    left:1px;
+    border:1px solid black;
+    display:grid;
+    grid-area: f;
+  
+}
+main{
+    background-color: white;
+    position:static;
+    padding-top: 100px;
+    margin:auto;
+    width: 80%;
+    border:1px solid black;
+    display:grid;
+    grid-area: m;
+    grid-template-areas:"n n n"
+    "a a a"
+    "f f f"; ;
+   
+}
+#nav1{
+    background-color: white;
+    position: absolute;
+    top:110px;
+    right:20px;
+    border:1px solid black;
+    display: grid;
+    grid-area: n;
+   
+}
+form{
+    
+    position: relative;
+    right:calc(50%-200px);
+    top:300px;
+    width:400px;
+    margin:auto;
+    background-color: gray;
+    
+}
+form h3{
+    text-align: center;
+}
+form button{
+    position: absolute;
+    right:5px;
+    border:1px solid red;
+    color:red;
+}
+#legordulo #fomenu{
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#fomenu{
+    position: relative;
+}
+#almenu{
+    position: absolute;
+    display:none;
+
+}
+#fomenu>li:hover #almenu{
+    display: block;
+}
+                        
